@@ -5,7 +5,6 @@ exports.up = function(knex) {
             .increments('id')
         table
             .string('name')
-            .unique()
             .notNullable()
     })
 };

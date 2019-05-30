@@ -13,6 +13,12 @@ exports.up = function(knex) {
             .references('id').inTable('ingredients')
                 .onDelete('CASCADE').onUpdate('CASCADE')
             .notNullable()
+        table
+            .float('amount')
+            .notNullable()
+        table
+            .string('units')
+            .notNullable()
             
     })
 };
